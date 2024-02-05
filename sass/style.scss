@@ -11,8 +11,32 @@ body {
 	background-color: #333;
 }
 
+.blue-text {
+	color: $main-color;
+}
+
+.shadow-bg {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
 nav {
 	text-transform: uppercase;
+	width: 100%;
+	transition: 0.6s;
+	z-index: 10;
+
+	.navbar-brand {
+		font-weight: bold;
+
+		&:hover {
+			color: $main-color;
+		}
+	}
+
+	.navbar-toggler {
+		padding: 10px 15px;
+		border: 1px solid rgb(23, 19, 19);
+	}
 
 	.nav-link,
 	.navbar-nav .show > .nav.link,
@@ -26,5 +50,65 @@ nav {
 	.navbar-nav .nav-link.active,
 	.navbar-nav .show > .nav-link {
 		color: $main-color;
+	}
+}
+
+header.hero-img {
+	position: relative;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-image: url('../img/playstation-small.jpg');
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	z-index: 0;
+
+	.hero-text {
+		text-align: center;
+		color: $white;
+		z-index: 5;
+
+		h1 {
+			text-transform: uppercase;
+		}
+	}
+
+	.hero-shadow {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.7);
+		z-index: -5;
+	}
+	.fa-chevron-down {
+		position: absolute;
+		bottom: 10vh;
+		left: 50%;
+		transform: translate(-50%);
+		font-size: 30px;
+		color: $white;
+	}
+}
+
+@media (min-width: 768px) {
+	.hero-text {
+		h1 {
+			font-size: 42px;
+		}
+		p {
+			font-size: 20px;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	header.hero-img {
+		background-image: url('../img/playstation-big.jpg');
 	}
 }
