@@ -252,7 +252,7 @@ header.hero-img {
 
 	.card {
 		transition: transform 0.3s;
-	
+
 		img {
 			height: 300px;
 			object-fit: cover;
@@ -275,7 +275,32 @@ header.hero-img {
 	.card-body {
 		height: 180px;
 	}
+}
 
+.achivements {
+	.achivement-group {
+		padding-bottom: 20px;
+
+		i {
+			font-size: 48px;
+			padding: 10px;
+			color: $white;
+			text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+		}
+
+		.achivement-card {
+			padding: 20px;
+		}
+
+		.card-number {
+			font-size: 22px;
+		}
+
+		.card-text {
+			text-transform: uppercase;
+			font-size: 13px;
+		}
+	}
 }
 
 @media (min-width: 768px) {

@@ -242,6 +242,26 @@ header.hero-img .fa-chevron-down {
   height: 180px;
 }
 
+.achivements .achivement-group {
+  padding-bottom: 20px;
+}
+.achivements .achivement-group i {
+  font-size: 48px;
+  padding: 10px;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+.achivements .achivement-group .achivement-card {
+  padding: 20px;
+}
+.achivements .achivement-group .card-number {
+  font-size: 22px;
+}
+.achivements .achivement-group .card-text {
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
 @media (min-width: 768px) {
   .hero-text h1 {
     font-size: 42px;
